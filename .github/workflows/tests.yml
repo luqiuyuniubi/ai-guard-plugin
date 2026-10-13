@@ -24,4 +24,5 @@ jobs:
         run: python -m examples.embedded
       - name: Verify installed SDK outside checkout
         working-directory: ${{ runner.temp }}
-        run: python -c "from ai_guard import SecurityPlugin, Policy; SecurityPlugin({'demo': Policy()}); print('SDK import OK')"
+        run: |
+          python -c "from ai_guard import SecurityPlugin, Policy; SecurityPlugin({'demo': Policy()}); print('SDK import OK')"
