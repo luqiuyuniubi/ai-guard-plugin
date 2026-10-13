@@ -1,0 +1,5 @@
+{
+  "knowledge": {"label": "企业知识库", "tools": ["read_document"]},
+  "support": {"label": "客服助手", "tools": ["read_document"]},
+  "analysis": {"label": "数据分析", "tools": ["sales_summary"]}
+}
